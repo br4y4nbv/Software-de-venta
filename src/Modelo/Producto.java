@@ -4,8 +4,8 @@ package Modelo;
 public class Producto {
     // Declaración de variables de instancia
     private int id; // Identificador único del producto
-    private String codigo, nombre; // Código y nombre del producto
-    private int precio; // Precio del producto
+    private String codigo, nombre, descripcion; // Código, nombre y descripción del producto
+    private int precio, stock; // Precio y stock del producto
 
     // Método para obtener el ID del producto
     public int getId() {
@@ -36,6 +36,16 @@ public class Producto {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    
+    // Método para obtener la descripción del producto
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    // Método para establecer la descripción del producto
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
 
     // Método para obtener el precio del producto
     public int getPrecio() {
@@ -45,5 +55,15 @@ public class Producto {
     // Método para establecer el precio del producto
     public void setPrecio(int precio) {
         this.precio = precio;
+    }
+    
+    // Método para obtener el stock del producto
+    public int getStock() {
+        return stock;
+    }
+
+    // Método para establecer el stock del producto
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 }
